@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b24261">
+
+    <TextView
+        android:id="@+id/activityName"
+        android:text="Second Activity"
+        android:textSize="40sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/userSelection"
+        android:background="#1da38c"
+        android:text="Nothing Selected Yed"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_margin="10sp"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10sp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/goFirstActivity"
+            android:background="#227793"
+            android:text="First Activity"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="40dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/goDetailActivity"
+            android:text="Detail Activity"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="40dp"
+            android:background="#87b553"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
